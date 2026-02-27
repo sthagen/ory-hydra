@@ -1529,9 +1529,7 @@
             "type": "integer"
           },
           "page_token": {
-            "default": "1",
             "description": "Next Page Token\n\nThe next page token.\nFor details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).",
-            "minimum": 1,
             "type": "string"
           }
         },
@@ -1562,9 +1560,7 @@
             "type": "integer"
           },
           "page_token": {
-            "default": "1",
             "description": "Next Page Token\n\nThe next page token.\nFor details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).",
-            "minimum": 1,
             "type": "string"
           }
         },
@@ -3143,8 +3139,6 @@
             "in": "query",
             "name": "page_token",
             "schema": {
-              "default": "1",
-              "minimum": 1,
               "type": "string"
             }
           },

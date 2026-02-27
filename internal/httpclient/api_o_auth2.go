@@ -2001,9 +2001,6 @@ func (a *OAuth2APIService) ListOAuth2ConsentSessionsExecute(r ApiListOAuth2Conse
 	}
 	if r.pageToken != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_token", r.pageToken, "form", "")
-	} else {
-		var defaultValue string = "1"
-		r.pageToken = &defaultValue
 	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "subject", r.subject, "form", "")
 	if r.loginSessionId != nil {

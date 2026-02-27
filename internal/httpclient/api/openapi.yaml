@@ -1123,8 +1123,6 @@ paths:
         name: page_token
         required: false
         schema:
-          default: "1"
-          minimum: 1
           type: string
         style: form
       - description: The subject to list the consent sessions for.
@@ -4649,13 +4647,11 @@ components:
           minimum: 1
           type: integer
         page_token:
-          default: "1"
           description: |-
             Next Page Token
 
             The next page token.
             For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
-          minimum: 1
           type: string
       type: object
     tokenPaginationHeaders:
@@ -4694,13 +4690,11 @@ components:
           minimum: 1
           type: integer
         page_token:
-          default: "1"
           description: |-
             Next Page Token
 
             The next page token.
             For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
-          minimum: 1
           type: string
       title: Pagination Request Parameters
       type: object

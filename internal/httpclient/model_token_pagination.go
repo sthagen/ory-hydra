@@ -34,8 +34,6 @@ func NewTokenPagination() *TokenPagination {
 	this := TokenPagination{}
 	var pageSize int64 = 250
 	this.PageSize = &pageSize
-	var pageToken string = "1"
-	this.PageToken = &pageToken
 	return &this
 }
 
@@ -46,8 +44,6 @@ func NewTokenPaginationWithDefaults() *TokenPagination {
 	this := TokenPagination{}
 	var pageSize int64 = 250
 	this.PageSize = &pageSize
-	var pageToken string = "1"
-	this.PageToken = &pageToken
 	return &this
 }
 
